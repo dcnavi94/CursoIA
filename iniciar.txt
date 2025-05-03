@@ -1,0 +1,10 @@
+kaggle.com
+
+
+crear venv 
+ python -m venv venv
+activar el venv S
+ venv\Scripts\activate
+
+
+pip install -r requirements.txt

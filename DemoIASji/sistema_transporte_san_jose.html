@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ff312020628340a7e782a9aad0b691fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ff312020628340a7e782a9aad0b691fe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ff312020628340a7e782a9aad0b691fe = L.map(
+                "map_ff312020628340a7e782a9aad0b691fe",
+                {
+                    center: [21.002, -100.387],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94584149c1b4325da116b65182b7b41f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_94584149c1b4325da116b65182b7b41f.addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var circle_marker_7c8bd4fd532fb20eaf6af41a414775a1 = L.circleMarker(
+                [20.9985, -100.387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_e603182d7d354bc2a474a2d5018ab521 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_751008706ef1ce749769bf864f4455d9 = $(`<div id="html_751008706ef1ce749769bf864f4455d9" style="width: 100.0%; height: 100.0%;">Parroquia de San José<br>Predicción: 19 pasajeros<br>miércoles 7h, lluvia</div>`)[0];
+                popup_e603182d7d354bc2a474a2d5018ab521.setContent(html_751008706ef1ce749769bf864f4455d9);
+            
+        
+
+        circle_marker_7c8bd4fd532fb20eaf6af41a414775a1.bindPopup(popup_e603182d7d354bc2a474a2d5018ab521)
+        ;
+
+        
+    
+    
+            var circle_marker_56e7031d2a47ee5e09a5a840ba9e0275 = L.circleMarker(
+                [20.9989, -100.3872],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_b879d22b25323289955a6ca739cd173c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5a5c54dbdc83c44aa639faefbbd5dd8 = $(`<div id="html_e5a5c54dbdc83c44aa639faefbbd5dd8" style="width: 100.0%; height: 100.0%;">Terminal de Autobuses<br>Predicción: 20 pasajeros<br>lunes 17h, lluvia</div>`)[0];
+                popup_b879d22b25323289955a6ca739cd173c.setContent(html_e5a5c54dbdc83c44aa639faefbbd5dd8);
+            
+        
+
+        circle_marker_56e7031d2a47ee5e09a5a840ba9e0275.bindPopup(popup_b879d22b25323289955a6ca739cd173c)
+        ;
+
+        
+    
+    
+            var circle_marker_7d8dc20a8c2ae3ff95be3df2f3606694 = L.circleMarker(
+                [20.9992, -100.3885],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_a43f1eed646256fbca9511f4bfd4d53f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99a70b6e84f9e14201d7ad78a59c4194 = $(`<div id="html_99a70b6e84f9e14201d7ad78a59c4194" style="width: 100.0%; height: 100.0%;">Mercado Municipal<br>Predicción: 20 pasajeros<br>miércoles 17h, lluvia</div>`)[0];
+                popup_a43f1eed646256fbca9511f4bfd4d53f.setContent(html_99a70b6e84f9e14201d7ad78a59c4194);
+            
+        
+
+        circle_marker_7d8dc20a8c2ae3ff95be3df2f3606694.bindPopup(popup_a43f1eed646256fbca9511f4bfd4d53f)
+        ;
+
+        
+    
+    
+            var poly_line_1bd3a305728ceed95fc440f902398f7a = L.polyline(
+                [[20.9987542, -100.3867247], [20.9986802, -100.3861621], [20.9986194, -100.3857431], [20.9989772, -100.3856686], [20.9993008, -100.3856078], [20.9996614, -100.3855318], [20.9998871, -100.3863917], [20.999981, -100.3867889], [20.9994534, -100.3869806], [20.9988366, -100.3872353]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var poly_line_abf49210cee22a07b7dc84b116d6e173 = L.polyline(
+                [[20.9988366, -100.3872353], [20.9994534, -100.3869806], [20.999981, -100.3867889], [21.0002421, -100.3877457], [20.9989842, -100.388142]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var circle_marker_1e3f9d2b2c7d47ff58079f263d76f8a6 = L.circleMarker(
+                [20.9938, -100.3862],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_53b1d99476d8d381b38e83793793f8c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d31c106e43444715d10aaced96aa40c = $(`<div id="html_6d31c106e43444715d10aaced96aa40c" style="width: 100.0%; height: 100.0%;">Parque La Alameda<br>Predicción: 18 pasajeros<br>miércoles 7h, lluvia</div>`)[0];
+                popup_53b1d99476d8d381b38e83793793f8c6.setContent(html_6d31c106e43444715d10aaced96aa40c);
+            
+        
+
+        circle_marker_1e3f9d2b2c7d47ff58079f263d76f8a6.bindPopup(popup_53b1d99476d8d381b38e83793793f8c6)
+        ;
+
+        
+    
+    
+            var circle_marker_51eeec71f5f42655d3fc322657f10ae3 = L.circleMarker(
+                [20.9927, -100.3841],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_f73319de5a4d8b695fcb9313feb7168c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c27cec4d9f86f1cea56b7b0f81b794f3 = $(`<div id="html_c27cec4d9f86f1cea56b7b0f81b794f3" style="width: 100.0%; height: 100.0%;">Escuela Secundaria Técnica<br>Predicción: 19 pasajeros<br>lunes 7h, soleado</div>`)[0];
+                popup_f73319de5a4d8b695fcb9313feb7168c.setContent(html_c27cec4d9f86f1cea56b7b0f81b794f3);
+            
+        
+
+        circle_marker_51eeec71f5f42655d3fc322657f10ae3.bindPopup(popup_f73319de5a4d8b695fcb9313feb7168c)
+        ;
+
+        
+    
+    
+            var circle_marker_c23ac858cb21641f75ef6dfa294e5be5 = L.circleMarker(
+                [20.995, -100.385],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_25de8b333b1874fdd9de20d0cd0c7351 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_894c9fb271f56960721ee5bf6809096b = $(`<div id="html_894c9fb271f56960721ee5bf6809096b" style="width: 100.0%; height: 100.0%;">La Cieneguita<br>Predicción: 22 pasajeros<br>miércoles 17h, lluvia</div>`)[0];
+                popup_25de8b333b1874fdd9de20d0cd0c7351.setContent(html_894c9fb271f56960721ee5bf6809096b);
+            
+        
+
+        circle_marker_c23ac858cb21641f75ef6dfa294e5be5.bindPopup(popup_25de8b333b1874fdd9de20d0cd0c7351)
+        ;
+
+        
+    
+    
+            var poly_line_161e01394794d241fd58a55bdcb68575 = L.polyline(
+                [[20.9935253, -100.3856221], [20.9932973, -100.3846202], [20.9928428, -100.3847219], [20.9926833, -100.3840345]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var poly_line_f3ab5ad2c9b4c51999b59840d94200a3 = L.polyline(
+                [[20.9926833, -100.3840345], [20.9928428, -100.3847219], [20.9932973, -100.3846202], [20.994441, -100.3843262], [20.9948138, -100.384146], [20.9949494, -100.3845678]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var circle_marker_331b24bbc7ba4b5aea227ed075f7b8ad = L.circleMarker(
+                [20.9911, -100.3788],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_a6e4b4d5bb2c6e2522254bbd31e61a92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87b350e9fc36a7c106c19e2c12f05aad = $(`<div id="html_87b350e9fc36a7c106c19e2c12f05aad" style="width: 100.0%; height: 100.0%;">Plaza del Refugio<br>Predicción: 15 pasajeros<br>miércoles 12h, lluvia</div>`)[0];
+                popup_a6e4b4d5bb2c6e2522254bbd31e61a92.setContent(html_87b350e9fc36a7c106c19e2c12f05aad);
+            
+        
+
+        circle_marker_331b24bbc7ba4b5aea227ed075f7b8ad.bindPopup(popup_a6e4b4d5bb2c6e2522254bbd31e61a92)
+        ;
+
+        
+    
+    
+            var circle_marker_4c4de5c14aec244a96d46b53bea82c73 = L.circleMarker(
+                [20.99, -100.38],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_8dfb7ac1db1a243a32cb20eeb18489b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0652129f2463a189ca1bc4ba48d5591 = $(`<div id="html_d0652129f2463a189ca1bc4ba48d5591" style="width: 100.0%; height: 100.0%;">Refugio de San José<br>Predicción: 21 pasajeros<br>lunes 17h, lluvia</div>`)[0];
+                popup_8dfb7ac1db1a243a32cb20eeb18489b5.setContent(html_d0652129f2463a189ca1bc4ba48d5591);
+            
+        
+
+        circle_marker_4c4de5c14aec244a96d46b53bea82c73.bindPopup(popup_8dfb7ac1db1a243a32cb20eeb18489b5)
+        ;
+
+        
+    
+    
+            var circle_marker_26508e29c2c84d0440e71acc9b87b017 = L.circleMarker(
+                [20.9915, -100.382],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_151e0b21b14fd6697037650139f14aff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47f0a69ee6d3d3487a663cbc03a9a538 = $(`<div id="html_47f0a69ee6d3d3487a663cbc03a9a538" style="width: 100.0%; height: 100.0%;">Centro de Salud Oriente<br>Predicción: 19 pasajeros<br>miércoles 17h, soleado</div>`)[0];
+                popup_151e0b21b14fd6697037650139f14aff.setContent(html_47f0a69ee6d3d3487a663cbc03a9a538);
+            
+        
+
+        circle_marker_26508e29c2c84d0440e71acc9b87b017.bindPopup(popup_151e0b21b14fd6697037650139f14aff)
+        ;
+
+        
+    
+    
+            var poly_line_a1183a68797083348dc3e5ff27afb51d = L.polyline(
+                [[20.990833, -100.3786804], [20.9903837, -100.3787233], [20.9900498, -100.3794357]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var poly_line_ecc92b341feedef38df372091a5fe52a = L.polyline(
+                [[20.9900498, -100.3794357], [20.9919213, -100.3811105], [20.9921265, -100.3820922]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var circle_marker_dee6fd7a5c207ee3800146ba5911b903 = L.circleMarker(
+                [21.0045, -100.3905],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_cd8763edf7792b1b2e5e271b423ceaa3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fdf6c4c3a401188c7b5aa0220c82ca8 = $(`<div id="html_6fdf6c4c3a401188c7b5aa0220c82ca8" style="width: 100.0%; height: 100.0%;">Unidad Deportiva Norte<br>Predicción: 20 pasajeros<br>lunes 17h, lluvia</div>`)[0];
+                popup_cd8763edf7792b1b2e5e271b423ceaa3.setContent(html_6fdf6c4c3a401188c7b5aa0220c82ca8);
+            
+        
+
+        circle_marker_dee6fd7a5c207ee3800146ba5911b903.bindPopup(popup_cd8763edf7792b1b2e5e271b423ceaa3)
+        ;
+
+        
+    
+    
+            var circle_marker_9d9f632c7c4343898fbee8dfcabe1da5 = L.circleMarker(
+                [21.003, -100.3917],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_3101a0715911e246b1443f54bc447919 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b71ac60440aad6a41e00d5ef654f159 = $(`<div id="html_3b71ac60440aad6a41e00d5ef654f159" style="width: 100.0%; height: 100.0%;">Preparatoria CBTA<br>Predicción: 18 pasajeros<br>lunes 17h, soleado</div>`)[0];
+                popup_3101a0715911e246b1443f54bc447919.setContent(html_3b71ac60440aad6a41e00d5ef654f159);
+            
+        
+
+        circle_marker_9d9f632c7c4343898fbee8dfcabe1da5.bindPopup(popup_3101a0715911e246b1443f54bc447919)
+        ;
+
+        
+    
+    
+            var circle_marker_4dc8e79fa6a9cb000cca0e4a038873b3 = L.circleMarker(
+                [21.0022, -100.3899],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_95033bdb8a157b2609b92e2ed79f8dae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f63d593507edfac409a2ceb6bd3cefa1 = $(`<div id="html_f63d593507edfac409a2ceb6bd3cefa1" style="width: 100.0%; height: 100.0%;">IMSS Norte<br>Predicción: 20 pasajeros<br>lunes 17h, lluvia</div>`)[0];
+                popup_95033bdb8a157b2609b92e2ed79f8dae.setContent(html_f63d593507edfac409a2ceb6bd3cefa1);
+            
+        
+
+        circle_marker_4dc8e79fa6a9cb000cca0e4a038873b3.bindPopup(popup_95033bdb8a157b2609b92e2ed79f8dae)
+        ;
+
+        
+    
+    
+            var poly_line_9daef54930342385f1a774dc24c56570 = L.polyline(
+                [[21.0051039, -100.3906728], [21.0052084, -100.3907497], [21.0039054, -100.3911934], [21.0013956, -100.3920532], [21.0013561, -100.3919189], [21.0022901, -100.3916024]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var poly_line_709dea851961895e68c5927c19b1d1a5 = L.polyline(
+                [[21.0022901, -100.3916024], [21.0019071, -100.3901888]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var circle_marker_38e555bc0029f65db74b929b196799fb = L.circleMarker(
+                [21.0072, -100.3958],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_a14b5bbe80539f093b91c86cac55a982 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_750e50fbdd8cfdeb694cdc72d21235fb = $(`<div id="html_750e50fbdd8cfdeb694cdc72d21235fb" style="width: 100.0%; height: 100.0%;">Parque Industrial<br>Predicción: 15 pasajeros<br>sábado 7h, soleado</div>`)[0];
+                popup_a14b5bbe80539f093b91c86cac55a982.setContent(html_750e50fbdd8cfdeb694cdc72d21235fb);
+            
+        
+
+        circle_marker_38e555bc0029f65db74b929b196799fb.bindPopup(popup_a14b5bbe80539f093b91c86cac55a982)
+        ;
+
+        
+    
+    
+            var circle_marker_01dc0f6003d8c9d8b40d9507679306f2 = L.circleMarker(
+                [21.008, -100.3935],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_f94a321de630e6f422f2c4db7ab8bfea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc3ddd0336e27490435c5845b0b1da7b = $(`<div id="html_bc3ddd0336e27490435c5845b0b1da7b" style="width: 100.0%; height: 100.0%;">Libramiento Oeste<br>Predicción: 12 pasajeros<br>sábado 12h, lluvia</div>`)[0];
+                popup_f94a321de630e6f422f2c4db7ab8bfea.setContent(html_bc3ddd0336e27490435c5845b0b1da7b);
+            
+        
+
+        circle_marker_01dc0f6003d8c9d8b40d9507679306f2.bindPopup(popup_f94a321de630e6f422f2c4db7ab8bfea)
+        ;
+
+        
+    
+    
+            var circle_marker_1a571a4a70863a77ab9e4123fa5f8e08 = L.circleMarker(
+                [21.006, -100.3971],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+        var popup_f608b1053250ef357376bf66580557b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cf64bbfc0e0cd101fdbc400ef78f077 = $(`<div id="html_4cf64bbfc0e0cd101fdbc400ef78f077" style="width: 100.0%; height: 100.0%;">Procter & Gamble<br>Predicción: 18 pasajeros<br>sábado 17h, lluvia</div>`)[0];
+                popup_f608b1053250ef357376bf66580557b6.setContent(html_4cf64bbfc0e0cd101fdbc400ef78f077);
+            
+        
+
+        circle_marker_1a571a4a70863a77ab9e4123fa5f8e08.bindPopup(popup_f608b1053250ef357376bf66580557b6)
+        ;
+
+        
+    
+    
+            var poly_line_0cd07f4c46ff67580c786157ad7ff10d = L.polyline(
+                [[21.0048729, -100.3935834], [21.0039054, -100.3911934], [21.0038525, -100.3910741], [21.0051039, -100.3906728], [21.0059492, -100.3903698], [21.0063671, -100.3902485], [21.0071381, -100.3899943], [21.0075737, -100.3898515], [21.0079957, -100.3897115], [21.0084543, -100.3895597], [21.0088637, -100.3894242], [21.0090705, -100.3893558], [21.0091309, -100.3893357], [21.0091711, -100.3894722], [21.0094927, -100.3906799], [21.0094157, -100.3907068], [21.0090996, -100.3908046], [21.0087534, -100.3909434]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+    
+            var poly_line_e70ee48609bfc2aecaf80ddf3b8157af = L.polyline(
+                [[21.0087534, -100.3909434], [21.0080458, -100.3898314], [21.0071715, -100.3901137], [21.0059887, -100.3904848], [21.0062156, -100.3913962], [21.0048729, -100.3935834], [21.0021083, -100.3946008], [21.0037611, -100.3986369]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ff312020628340a7e782a9aad0b691fe);
+        
+</script>
+</html>

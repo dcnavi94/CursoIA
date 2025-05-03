@@ -1,0 +1,43 @@
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+
+# 1. Datos de ejemplo: 10 pacientes con síntomas
+X = np.array([
+    [1, 1, 1, 0, 0],  # Gripe
+    [1, 1, 0, 1, 0],  # COVID-19
+    [0, 0, 0, 0, 1],  # Alergia
+    [1, 1, 1, 1, 0],  # COVID-19
+    [0, 1, 0, 0, 1],  # Alergia
+    [1, 1, 1, 0, 0],  # Gripe
+    [0, 0, 0, 0, 1],  # Alergia
+    [1, 1, 1, 1, 0],  # COVID-19
+    [1, 1, 1, 0, 0],  # Gripe
+    [0, 0, 0, 0, 1],  # Alergia
+])
+y = [
+    "Gripe", "COVID-19", "Alergia", "COVID-19", "Alergia",
+    "Gripe", "Alergia", "COVID-19", "Gripe", "Alergia"
+]
+
+# 2. Entrenar modelo Random Forest
+modelo_rf = RandomForestClassifier(n_estimators=100, random_state=42)
+modelo_rf.fit(X, y)
+
+# 3. Evaluar paciente nuevo
+paciente_nuevo = np.array([[1, 1, 0, 1, 0]])  # Fiebre, tos, sin dolor, dificultad respiratoria, sin estornudos
+diagnostico = modelo_rf.predict(paciente_nuevo)[0]
+probas = modelo_rf.predict_proba(paciente_nuevo)
+
+print("🩺 Síntomas del paciente nuevo:")
+print("   ➤ Fiebre: Sí, Tos: Sí, Dolor muscular: No, Dificultad para respirar: Sí, Estornudos: No")
+print(f"\n🔍 Diagnóstico probable: {diagnostico}")
+print("\n📊 Probabilidades:")
+for clase, prob in zip(modelo_rf.classes_, probas[0]):
+    print(f"   {clase}: {prob:.2%}")
+
+# 4. Métricas internas del modelo (para entrenamiento)
+y_pred_train = modelo_rf.predict(X)
+print("\n📈 Evaluación en entrenamiento:")
+print(confusion_matrix(y, y_pred_train))
+print(classification_report(y, y_pred_train))

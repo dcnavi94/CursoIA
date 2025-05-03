@@ -1,0 +1,46 @@
+import numpy as np
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+import matplotlib.pyplot as plt
+
+# 1. Datos de pacientes (X) y diagnóstico (y)
+X = np.array([
+    [1, 1, 1, 0, 0],  # Gripe
+    [1, 1, 0, 1, 0],  # COVID-19
+    [0, 0, 0, 0, 1],  # Alergia
+    [1, 1, 1, 1, 0],  # COVID-19
+    [0, 1, 0, 0, 1],  # Alergia
+    [1, 1, 1, 0, 0],  # Gripe
+    [0, 0, 0, 0, 1],  # Alergia
+    [1, 1, 1, 1, 0],  # COVID-19
+    [1, 1, 1, 0, 0],  # Gripe
+    [0, 0, 0, 0, 1],  # Alergia
+])
+
+y = [
+    "Gripe", "COVID-19", "Alergia", "COVID-19", "Alergia",
+    "Gripe", "Alergia", "COVID-19", "Gripe", "Alergia"
+]
+
+# 2. Entrenar árbol
+modelo = DecisionTreeClassifier(criterion="entropy", max_depth=3)
+modelo.fit(X, y)
+
+# 3. Evaluar nuevo paciente
+paciente_nuevo = np.array([[1, 1, 0, 1, 0]])  # Fiebre, tos, sin dolor, con dificultad, sin estornudos
+diagnostico = modelo.predict(paciente_nuevo)[0]
+
+print("🩺 Nuevo paciente con síntomas:")
+print("   Fiebre: Sí, Tos: Sí, Dolor muscular: No, Dificultad para respirar: Sí, Estornudos: No")
+print(f"🔍 Diagnóstico probable: {diagnostico}")
+
+# 4. Visualizar el árbol
+nombres_caracteristicas = ["Fiebre", "Tos", "Dolor muscular", "Dificultad respiratoria", "Estornudos"]
+plt.figure(figsize=(12, 6))
+plot_tree(modelo,
+          feature_names=nombres_caracteristicas,
+          class_names=modelo.classes_,
+          filled=True,
+          rounded=True,
+          fontsize=10)
+plt.title("🌳 Árbol de decisión: Diagnóstico médico")
+plt.show()
